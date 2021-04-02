@@ -1,0 +1,313 @@
+{
+    "results": [
+        {
+            "description": "Locations: TX - Plano, United States of America, Plano, Texas Senior <strong>Software</strong> <strong>Engineer</strong>  Do you love building and pioneering in the technology space? Do you enjoy solving complex ... , who love to solve real problems and meet real customer needs.   We are seeking <strong>Software</strong> <strong>Engineers</strong> who are passionate about marrying data with emerging technologies to join our team ...",
+            "latitude": 33.060381,
+            "salary_is_predicted": "0",
+            "title": "Senior <strong>Software</strong> <strong>Engineer</strong>",
+            "redirect_url": "https://www.adzuna.com/land/ad/2091779869?se=nqLIhjqT6xGJ08dZZcnrqw&utm_medium=api&utm_source=e65a5991&v=D83F2566565ECB6E53CA5E2CA980FDDCFD86491A",
+            "created": "2021-04-01T15:58:31Z",
+            "category": {
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "label": "IT Jobs",
+                "tag": "it-jobs"
+            },
+            "company": {
+                "display_name": "Capital One",
+                "__CLASS__": "Adzuna::API::Response::Company"
+            },
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiMjA5MTc3OTg2OSIsInMiOiJucUxJaGpxVDZ4R0owOGRaWmNucnF3In0.9RyBazQsYGFfbvjoZtlUwyDnmG3MknNuGW4L9vDEYa4",
+            "id": "2091779869",
+            "location": {
+                "display_name": "Plano, Collin County",
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "area": [
+                    "US",
+                    "Texas",
+                    "Collin County",
+                    "Plano"
+                ]
+            },
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "longitude": -96.733343
+        },
+        {
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoibnFMSWhqcVQ2eEdKMDhkWlpjbnJxdyIsImkiOiIyMDU2MTExMjQyIn0.ceKpO87fDetTOg361fQN4friT_8ZG2fdXnKzXnfO2YE",
+            "id": "2056111242",
+            "location": {
+                "display_name": "Mc Lean, Fairfax County",
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "area": [
+                    "US",
+                    "Virginia",
+                    "Fairfax County",
+                    "Mc Lean"
+                ]
+            },
+            "category": {
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "label": "IT Jobs",
+                "tag": "it-jobs"
+            },
+            "company": {
+                "display_name": "Capital One",
+                "__CLASS__": "Adzuna::API::Response::Company"
+            },
+            "longitude": -77.23,
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "salary_is_predicted": "0",
+            "title": "Senior <strong>Software</strong> <strong>Engineer</strong>",
+            "description": "Locations: VA - McLean, United States of America, McLean, Virginia Senior <strong>Software</strong> <strong>Engineer</strong> Do you love building and pioneering in the technology space? Do you enjoy solving ...  and disruptors, who love to solve real problems and meet real customer needs. We are seeking <strong>Software</strong> <strong>Engineers</strong> who are passionate about marrying data with emerging technologies to join our ...",
+            "latitude": 38.97,
+            "created": "2021-03-16T19:05:54Z",
+            "redirect_url": "https://www.adzuna.com/land/ad/2056111242?se=nqLIhjqT6xGJ08dZZcnrqw&utm_medium=api&utm_source=e65a5991&v=9F2326E6D4FA34F6138E249FEA4F5BE8AD5FFA1F"
+        },
+        {
+            "description": "800 Delaware Avenue (18056), United States of America, Wilmington, Delaware Senior <strong>Software</strong> <strong>Engineer</strong> Do you love building and pioneering in the technology space? Do you enjoy ...  and disruptors, who love to solve real problems and meet real customer needs. We are seeking <strong>Software</strong> <strong>Engineers</strong> who are passionate about marrying data with emerging technologies to join our ...",
+            "latitude": 39.73126,
+            "title": "Senior <strong>Software</strong> <strong>Engineer</strong>",
+            "salary_is_predicted": "0",
+            "redirect_url": "https://www.adzuna.com/land/ad/2070622659?se=nqLIhjqT6xGJ08dZZcnrqw&utm_medium=api&utm_source=e65a5991&v=7603C46C198769379CDB4F5DB91E53DEF29F749A",
+            "created": "2021-03-23T01:02:16Z",
+            "category": {
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "tag": "it-jobs",
+                "label": "IT Jobs"
+            },
+            "company": {
+                "display_name": "Capital One",
+                "__CLASS__": "Adzuna::API::Response::Company"
+            },
+            "id": "2070622659",
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoibnFMSWhqcVQ2eEdKMDhkWlpjbnJxdyIsImkiOiIyMDcwNjIyNjU5In0.XTgtUc3tHeB6Fa6SAaFQiVbgk61bp8cgX8kabF07bE4",
+            "location": {
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "display_name": "Wilmington, New Castle County",
+                "area": [
+                    "US",
+                    "Delaware",
+                    "New Castle County",
+                    "Wilmington"
+                ]
+            },
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "longitude": -75.545138
+        },
+        {
+            "location": {
+                "area": [
+                    "US",
+                    "Massachusetts",
+                    "Middlesex County",
+                    "Cambridge"
+                ],
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "display_name": "Cambridge, Middlesex County"
+            },
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoibnFMSWhqcVQ2eEdKMDhkWlpjbnJxdyIsImkiOiIyMDkxNzc5ODc5In0.DdQvfdav8pVC3X8R_UOqOBlOfCHUnWAeclnRrk4eEe4",
+            "id": "2091779879",
+            "category": {
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "tag": "it-jobs",
+                "label": "IT Jobs"
+            },
+            "company": {
+                "display_name": "Capital One",
+                "__CLASS__": "Adzuna::API::Response::Company"
+            },
+            "longitude": -71.13891,
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "title": "Senior <strong>Software</strong> <strong>Engineer</strong>",
+            "salary_is_predicted": "0",
+            "description": "314 Main Street (21020), United States of America, Cambridge, Massachusetts Senior <strong>Software</strong> <strong>Engineer</strong> Do you love building and pioneering in the technology space? Do you enjoy ...  and disruptors, who love to solve real problems and meet real customer needs. We are seeking <strong>Software</strong> <strong>Engineers</strong> who are passionate about marrying data with emerging technologies to join our ...",
+            "latitude": 42.380327,
+            "created": "2021-04-01T15:58:32Z",
+            "redirect_url": "https://www.adzuna.com/land/ad/2091779879?se=nqLIhjqT6xGJ08dZZcnrqw&utm_medium=api&utm_source=e65a5991&v=2B688C08D396A6EA2317FD7CECEAC02F2B839F2B"
+        },
+        {
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoibnFMSWhqcVQ2eEdKMDhkWlpjbnJxdyIsImkiOiIyMDUwNzUyNDM2In0.ZwsNOhQBpQY_9gW_Hh5OZmbIsnG_W8R6W2iWMqxAdts",
+            "id": "2050752436",
+            "location": {
+                "area": [
+                    "US",
+                    "Virginia",
+                    "Fairfax County",
+                    "Mc Lean"
+                ],
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "display_name": "Mc Lean, Fairfax County"
+            },
+            "category": {
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "tag": "it-jobs",
+                "label": "IT Jobs"
+            },
+            "company": {
+                "display_name": "Capital One",
+                "__CLASS__": "Adzuna::API::Response::Company"
+            },
+            "longitude": -77.23,
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "title": "Sr <strong>Software</strong> <strong>engineer</strong>",
+            "salary_is_predicted": "0",
+            "description": "7900 Westpark Drive (12131), United States of America, McLean, Virginia Sr <strong>Software</strong> <strong>engineer</strong> Do you love building and pioneering in the technology space? Do you enjoy solving ...  and disruptors, who love to solve real problems and meet real customer needs. We are seeking <strong>Software</strong> <strong>Engineers</strong> who are passionate about marrying data with emerging technologies to join our ...",
+            "latitude": 38.97,
+            "created": "2021-03-13T20:01:13Z",
+            "redirect_url": "https://www.adzuna.com/land/ad/2050752436?se=nqLIhjqT6xGJ08dZZcnrqw&utm_medium=api&utm_source=e65a5991&v=57C8985CCDCAE19EF34ECFE0718824DC78CDA94C"
+        },
+        {
+            "description": "Locations: VA - Richmond, United States of America, Richmond, Virginia Senior <strong>Software</strong> <strong>Engineer</strong>  Do you love building and pioneering in the technology space? Do you enjoy solving ...  and disruptors, who love to solve real problems and meet real customer needs.   We are seeking <strong>Software</strong> <strong>Engineers</strong> who are passionate about marrying data with emerging technologies to join our ...",
+            "latitude": 37.959676,
+            "title": "Senior <strong>Software</strong> <strong>Engineer</strong>",
+            "salary_is_predicted": "0",
+            "redirect_url": "https://www.adzuna.com/land/ad/2085942569?se=nqLIhjqT6xGJ08dZZcnrqw&utm_medium=api&utm_source=e65a5991&v=B922ACC3D85B6273C375AA6ED0A03CF86C1B7B50",
+            "created": "2021-03-30T03:23:21Z",
+            "company": {
+                "display_name": "Capital One",
+                "__CLASS__": "Adzuna::API::Response::Company"
+            },
+            "category": {
+                "tag": "it-jobs",
+                "label": "IT Jobs",
+                "__CLASS__": "Adzuna::API::Response::Category"
+            },
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoibnFMSWhqcVQ2eEdKMDhkWlpjbnJxdyIsImkiOiIyMDg1OTQyNTY5In0.OGy8lMHRxVP81cLkNdXBwuuntQWWrns62id93BTf5AM",
+            "id": "2085942569",
+            "location": {
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "display_name": "Richmond County, Virginia",
+                "area": [
+                    "US",
+                    "Virginia",
+                    "Richmond County"
+                ]
+            },
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "longitude": -76.711917
+        },
+        {
+            "created": "2021-03-25T23:35:10Z",
+            "redirect_url": "https://www.adzuna.com/land/ad/2077725640?se=nqLIhjqT6xGJ08dZZcnrqw&utm_medium=api&utm_source=e65a5991&v=E976E35659F234FE595D1810F53F6B206B8ECDC8",
+            "salary_is_predicted": "0",
+            "title": "Senior <strong>Software</strong> <strong>Engineer</strong>",
+            "description": "West Creek 6 (12076), United States of America, Richmond, Virginia Senior <strong>Software</strong> <strong>Engineer</strong> Do you love building and pioneering in the technology space? Do you enjoy solving ...  and disruptors, who love to solve real problems and meet real customer needs. We are seeking <strong>Software</strong> <strong>Engineers</strong> who are passionate about marrying data with emerging technologies to join our ...",
+            "latitude": 37.959676,
+            "longitude": -76.711917,
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiMjA3NzcyNTY0MCIsInMiOiJucUxJaGpxVDZ4R0owOGRaWmNucnF3In0.9xCCbIcrYVzkT1C7XSqSZoVr4NZf6xBvg-u3ZtTu_X8",
+            "id": "2077725640",
+            "location": {
+                "area": [
+                    "US",
+                    "Virginia",
+                    "Richmond County"
+                ],
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "display_name": "Richmond County, Virginia"
+            },
+            "category": {
+                "label": "IT Jobs",
+                "tag": "it-jobs",
+                "__CLASS__": "Adzuna::API::Response::Category"
+            },
+            "company": {
+                "display_name": "Capital One",
+                "__CLASS__": "Adzuna::API::Response::Company"
+            }
+        },
+        {
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoibnFMSWhqcVQ2eEdKMDhkWlpjbnJxdyIsImkiOiIyMDcwNjIyNzk0In0.R7rXwEWeYK8jxsoB6CIK3xN3gKg__pWFfxQL63oNlL0",
+            "id": "2070622794",
+            "location": {
+                "area": [
+                    "US",
+                    "New York",
+                    "New York City"
+                ],
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "display_name": "New York City, New York"
+            },
+            "company": {
+                "display_name": "Capital One",
+                "__CLASS__": "Adzuna::API::Response::Company"
+            },
+            "category": {
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "tag": "it-jobs",
+                "label": "IT Jobs"
+            },
+            "longitude": -73.970368,
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "salary_is_predicted": "0",
+            "title": "Master <strong>Software</strong> <strong>Engineer</strong>",
+            "description": "11 West 19th Street (22008), United States of America, New York, New York Master <strong>Software</strong> <strong>Engineer</strong> Do you love building and pioneering in the technology space? Do you enjoy ...  and disruptors, who love to solve real problems and meet real customer needs. We are seeking <strong>Software</strong> <strong>Engineers</strong> who are passionate about marrying data with emerging technologies to join our ...",
+            "latitude": 40.767036,
+            "created": "2021-03-23T01:02:25Z",
+            "redirect_url": "https://www.adzuna.com/land/ad/2070622794?se=nqLIhjqT6xGJ08dZZcnrqw&utm_medium=api&utm_source=e65a5991&v=BC5FE997ABE02E41211C06AA7F81CE2D5A1241DD"
+        },
+        {
+            "category": {
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "tag": "it-jobs",
+                "label": "IT Jobs"
+            },
+            "company": {
+                "__CLASS__": "Adzuna::API::Response::Company",
+                "display_name": "Capital One"
+            },
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoibnFMSWhqcVQ2eEdKMDhkWlpjbnJxdyIsImkiOiIyMDcwNjIyNjU2In0.WKw35AIoEpQbX55TJBcS4mY8YdqPPF7nS4O-lNJWHEM",
+            "location": {
+                "area": [
+                    "US",
+                    "Massachusetts",
+                    "Middlesex County",
+                    "Cambridge"
+                ],
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "display_name": "Cambridge, Middlesex County"
+            },
+            "id": "2070622656",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "longitude": -71.13891,
+            "description": "314 Main Street (21020), United States of America, Cambridge, Massachusetts Master <strong>Software</strong> <strong>Engineer</strong> Do you love building and pioneering in the technology space? Do you enjoy ...  and disruptors, who love to solve real problems and meet real customer needs. We are seeking <strong>Software</strong> <strong>Engineers</strong> who are passionate about marrying data with emerging technologies to join our ...",
+            "latitude": 42.380327,
+            "title": "Master <strong>Software</strong> <strong>Engineer</strong>",
+            "salary_is_predicted": "0",
+            "redirect_url": "https://www.adzuna.com/land/ad/2070622656?se=nqLIhjqT6xGJ08dZZcnrqw&utm_medium=api&utm_source=e65a5991&v=BEEBCFFDC1E3072A13E813AEC4BAC9929DA56C9A",
+            "created": "2021-03-23T01:02:16Z"
+        },
+        {
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiMjA5MTc3OTg0NyIsInMiOiJucUxJaGpxVDZ4R0owOGRaWmNucnF3In0.PZAMW3d-D_yhsP1y2LwaUWC-dzmF2tGFOaLGAmAC6uY",
+            "location": {
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "display_name": "Illinois Medical District, Chicago",
+                "area": [
+                    "US",
+                    "Illinois",
+                    "Cook County",
+                    "Chicago",
+                    "Illinois Medical District"
+                ]
+            },
+            "id": "2091779847",
+            "category": {
+                "tag": "it-jobs",
+                "label": "IT Jobs",
+                "__CLASS__": "Adzuna::API::Response::Category"
+            },
+            "company": {
+                "__CLASS__": "Adzuna::API::Response::Company",
+                "display_name": "Capital One"
+            },
+            "longitude": -87.673975,
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "title": "Senior <strong>Software</strong> <strong>Engineer</strong>",
+            "salary_is_predicted": "0",
+            "description": "77 West Wacker Dr (35012), United States of America, Chicago, Illinois Senior <strong>Software</strong> <strong>Engineer</strong>  Do you love building and pioneering in the technology space? Do you enjoy solving ...  and disruptors, who love to solve real problems and meet real customer needs.   We are seeking <strong>Software</strong> <strong>Engineers</strong> who are passionate about marrying data with emerging technologies to join our ...",
+            "latitude": 41.868494,
+            "created": "2021-04-01T15:58:25Z",
+            "redirect_url": "https://www.adzuna.com/land/ad/2091779847?se=nqLIhjqT6xGJ08dZZcnrqw&utm_medium=api&utm_source=e65a5991&v=3787028E58CE9173142EC15157F5D8347BDCA1E4"
+        }
+    ]
+    
+}
