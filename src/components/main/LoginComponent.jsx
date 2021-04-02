@@ -4,8 +4,8 @@ import AuthenticationService from '../../js/AuthenticationService.js'
 import login from '../../api/login.js'
 import HeaderComponent  from './HeaderComponent.jsx'
 import LoginUser from '../../js/LoginUser.jsx'
-import { withRouter } from 'react-router'
-import { useHistory } from "react-router-dom";
+
+
 
 
 // const loginCom = (props) => {
@@ -90,7 +90,7 @@ class LoginComponent extends Component {
 
     }
     
-    submithanlde = (e) => {
+    submithanlde = () => {
         {
             this.props.getUserDetail(this.state.useremail, this.state.password)
         }
@@ -102,8 +102,7 @@ class LoginComponent extends Component {
         
 
         return (
-          
-            <div >
+                      <div >
                
                 <h1>Login</h1>
 
@@ -139,9 +138,7 @@ class LoginComponent extends Component {
                                     <button className="btn btn-success btn-lg  " type="submit">login</button>
                              </fieldset>
 
-                                <fieldset className="form-group">
-                                    <button className="btn btn-success btn-lg  "  type="button">Signup</button>
-                             </fieldset>
+                                
                         </Form>)
                         
                     }
@@ -156,15 +153,12 @@ class LoginComponent extends Component {
        
     // validate = (values) => {
     //     let errors = {}
-    //     if (!values.description) {
-    //         errors.description = 'Enter a description'
-    //     } else if (values.description.length < 5) {
-    //         errors.description = 'Enter at least 5 chars deecroption'
+    //     if (!values.useremail) {
+    //         errors.useremail = 'Required'
+    //     } else if (!values.password) {
+    //         errors.description = 'Required'
     //     }
-    //     if (!moment(values.targetDate || moment(values.targetDate) === "")) {
-    //         errors.targetDate = 'Enter valid Date'
-    //     }
-
+      
     //     return errors
 
     // }
@@ -186,4 +180,4 @@ class LoginComponent extends Component {
 
 
 
-export default withRouter(LoginComponent)
+export default LoginComponent

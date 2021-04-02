@@ -3,8 +3,13 @@ import { Component } from "react";
 
 class AlmuniPost  {
 
-    getuserDetail() {// get almuni post
-        return axios.post('http://localhost:8082/login');
+    postReferral(useremail, post) {// get almuni post
+        const refpost={useremail,post}
+        return axios.post('http://localhost:8080/postjob/referal', refpost);
+    }
+    postJob(useremail,post) {// get almuni post
+        const jobpost = { useremail, post }
+        return axios.post('http://localhost:8080/postjob/joblink',jobpost);
     }
 }
 export default new AlmuniPost()

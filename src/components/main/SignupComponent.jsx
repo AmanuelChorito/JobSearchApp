@@ -63,6 +63,17 @@ class SignupComponent extends Component {
             </>
         )
     }
+    validate = (values) => {
+        let errors = {}
+        if (!values.useremail) {
+            errors.useremail = 'Required'
+        } else if (!values.password) {
+            errors.description = 'Required'
+        }
+
+        return errors
+
+    }
     handleChange = (event) => {
         
         this.setState({ [event.target.name]: event.target.value })

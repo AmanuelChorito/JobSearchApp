@@ -10,7 +10,7 @@ class login   {
     
      getuserDetailpost(emailaddress, password) {// get user and user role to show view accordingly
         const logindetail={email: emailaddress, pas: password}
-         return axios.post(`http://localhost:3000/login`, logindetail)
+         //return axios.post(`http://localhost:3000/login`, logindetail)
         }
 }
 export default new login()

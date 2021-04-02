@@ -8,6 +8,10 @@ import SignUp from '../../js/SignUp.js'
 class HeaderComponent extends Component {
     constructor(props){
         super(props)
+        this.state={
+            role: this.props.userrole
+
+        }
     }
     render() {
       
@@ -18,13 +22,20 @@ class HeaderComponent extends Component {
             <header>
                 <nav className="navbar navbar-expand-md navbar-dark bg-dark">
                     <div> <a href="" className="navbar-brand"> CPT for Lazy </a></div>
-                    <ul className="navbar-nav">
-                        {/*<div> {this.props.useremail}</div>*/}
+                    <ul className="navbar-nav mr-auto">
+                       {console.log(this.state.role)}
+                       
+                       
                         {isuserloggedin && <li ><Link className="nav-link" to="/welcome">Home </Link></li>}
-                        {isuserloggedin  && <li ><Link className="nav-link" to="/Jobs"> Jobs</Link></li>}
-                        {isuserloggedin  &&<li ><Link className="nav-link" to="/Almunipost"> Almuni Posts</Link></li>}
-                        {isuserloggedin && <li ><Link className="nav-link" to="/Post"> Posts</Link></li>}
-                        {isuserloggedin && <li ><Link className="nav-link" to="/ReferralRequests"> Referral Requests</Link></li>}
+                        {isuserloggedin && (this.state.role==='jobseeker')&& <li ><Link className="nav-link" to="/Jobs"> Jobs</Link></li>}
+                        {isuserloggedin && (this.state.role === 'jobseeker')&& <li ><Link className="nav-link" to="/Almunipost"> Almuni Posts</Link></li>}
+                        {isuserloggedin && (this.state.role === 'almuni')&& <li ><Link className="nav-link" to="/Postref"> Post Referral</Link></li>}
+
+                        {isuserloggedin && (this.state.role === 'almuni') && <li ><Link className="nav-link" to="/Postjob"> Post Job</Link></li>}
+
+                       
+
+                        {isuserloggedin && (this.state.role === 'almuni') && <li ><Link className="nav-link" to="/ReferralRequests"> Referral Requests</Link></li>}
                     </ul>
                     <ul className="navbar-nav navbar-collapse justify-content-end">
                         {!isuserloggedin && <li><Link className="nav-link" to="/Login">Login</Link></li>}
@@ -39,4 +50,4 @@ class HeaderComponent extends Component {
         )
     }
 }
-export default withRouter(HeaderComponent)
+export default HeaderComponent

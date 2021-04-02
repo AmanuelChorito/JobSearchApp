@@ -6,7 +6,7 @@ import AuthenticationService from '../../js/AuthenticationService.js'
 class AuthenticatedRoute extends Component {
 
     render() {
-
+            //temporary
         if (AuthenticationService.isUserLoggedIn()) {
             return <Route {...this.props}></Route>
         }
