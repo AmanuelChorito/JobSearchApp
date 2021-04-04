@@ -28,14 +28,17 @@ class HeaderComponent extends Component {
                        
                         {isuserloggedin && <li ><Link className="nav-link" to="/welcome">Home </Link></li>}
                         {isuserloggedin && (this.state.role==='seeker') && <li ><Link className="nav-link" to="/Jobs"> Jobs </Link></li>}
-                        {isuserloggedin && (this.state.role === 'seeker')&& <li ><Link className="nav-link" to="/Almunipost"> Almuni's Posts</Link></li>}
-                        {isuserloggedin && (this.state.role === 'almuni')&& <li ><Link className="nav-link" to="/Postref"> Referrals</Link></li>}
+                        {isuserloggedin && (this.state.role === 'seeker') && <li ><Link className="nav-link" to="/Almunipost"> Almuni's Posts</Link></li>}
+                        {isuserloggedin && (this.state.role === 'seeker') && <li ><Link className="nav-link" to="/SendReferral"> Referrals</Link></li>}
 
+
+                        {isuserloggedin && (this.state.role === 'almuni')&& <li ><Link className="nav-link" to="/Postref"> Post Referrals</Link></li>}
+                        
                         {isuserloggedin && (this.state.role === 'almuni') && <li ><Link className="nav-link" to="/Postjob"> Post Job</Link></li>}
 
                        
 
-                        {isuserloggedin && (this.state.role === 'seeker') && <li ><Link className="nav-link" to="/ReferralRequests">  Referrals</Link></li>}
+                        {isuserloggedin && (this.state.role === 'almuni') && <li ><Link className="nav-link" to="/ReferralRequest"> ReferralRequests</Link></li>}
                     </ul>
                     <ul className="navbar-nav navbar-collapse justify-content-end">
                         {!isuserloggedin && <li><Link className="nav-link" to="/Login">Login</Link></li>}

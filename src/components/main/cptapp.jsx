@@ -11,14 +11,15 @@ import AlmuniPostViewComponent from './AlmuniPostViewComponent.jsx'
 import PostRef from './postref.jsx'
 import PostJob from './postjob.jsx'
 import Jobs from './Jobs.jsx'
-import ReferralRequests from './ReferralRequest.jsx'
+import SendReferral from './SendReferralRequest.jsx'
 import UserProfile from './UserProfile.jsx'
 import loginapi from '../../api/loginapi'
 import AuthenticationService from '../../js/AuthenticationService.js'
 import { createHashHistory } from 'history'
 import { useHistory } from "react-router-dom";
 import history from '../../js/history';
-import interceptors from '../../interceptors.js'
+import interceptors from './interceptors.js'
+import ReferralRequest from './AcceptReferralRequest'
 class CptApp extends Component {
     constructor(props){
         super(props)
@@ -172,10 +173,13 @@ class CptApp extends Component {
                         </AuthenticatedRoute>
 
 
-                        <AuthenticatedRoute path="/ReferralRequests" >
-                            <ReferralRequests/>
+                        <AuthenticatedRoute path="/SendReferral" >
+                            <SendReferral {...this.state}/>
                         </AuthenticatedRoute>
-
+        
+                        <AuthenticatedRoute path="/ReferralRequest" >
+                            <ReferralRequest {...this.state} />
+                        </AuthenticatedRoute>
 
                         <AuthenticatedRoute path="/UserProfile" >
                         
