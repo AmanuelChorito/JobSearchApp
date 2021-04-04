@@ -167,6 +167,8 @@ class LoginComponent extends Component {
         alert("im working")
     }
     signupClicked=()=>{
+        localStorage.clear();
+        
         this.props.history.push('/signup')
     
     }

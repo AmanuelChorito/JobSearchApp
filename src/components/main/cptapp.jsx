@@ -18,6 +18,7 @@ import AuthenticationService from '../../js/AuthenticationService.js'
 import { createHashHistory } from 'history'
 import { useHistory } from "react-router-dom";
 import history from '../../js/history';
+import interceptors from '../../interceptors.js'
 class CptApp extends Component {
     constructor(props){
         super(props)
@@ -30,7 +31,7 @@ class CptApp extends Component {
              isuserJobSeeker:'false',
              loginstate:'',
          roleobj: {
-             role: 'almuni', 
+             role: 'seeker', 
                 name: '', 
                 tephoneNumber: '',
                 address: '',
@@ -62,7 +63,8 @@ class CptApp extends Component {
         //                     //                     roleName: Response.data.roleName,
         //                     //                         preferredJob: Response.data.preferredJob,
         //                     //                             preferredCompany: Response.data.preferredCompany
-
+                                                    //localStorage.setItem("authorization", Response.data.token);
+                                                  
         //             })
 
         //             console.log(Response.data.id)
@@ -157,8 +159,8 @@ class CptApp extends Component {
                         </AuthenticatedRoute> 
 
 
-                        <AuthenticatedRoute path="/Postjob" >
-                            <PostJob />
+                        <AuthenticatedRoute path="/Postjob"  >
+                            <PostJob {...this.state}/>
                         </AuthenticatedRoute>
 
                         <AuthenticatedRoute path="/Postref" >
