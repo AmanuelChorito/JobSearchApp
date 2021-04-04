@@ -1,7 +1,7 @@
 import React, { Component, useState } from 'react'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import AuthenticationService from '../../js/AuthenticationService.js'
-import login from '../../api/login.js'
+import loginapi from '../../api/loginapi.js'
 import HeaderComponent  from './HeaderComponent.jsx'
 import LoginUser from '../../js/LoginUser.jsx'
 
@@ -122,7 +122,7 @@ class LoginComponent extends Component {
                         (props)=>(
                              <Form>
                             <ErrorMessage name="useremail" component="div" className="alert alert-warning"></ErrorMessage>
-                            <ErrorMessage name="password" component="div>" className="alert alert-warning"></ErrorMessage>
+                            <ErrorMessage name="password" component="div" className="alert alert-warning"></ErrorMessage>
                              {!this.state.loginstate && <div className="alert alert-warning"> Invalid Credentials</div>}
                             <fieldset className="form-group">
                                 <label>User name: </label>

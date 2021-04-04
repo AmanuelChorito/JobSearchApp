@@ -13,7 +13,7 @@ import PostJob from './postjob.jsx'
 import Jobs from './Jobs.jsx'
 import ReferralRequests from './ReferralRequest.jsx'
 import UserProfile from './UserProfile.jsx'
-import login from '../../api/login.js'
+import loginapi from '../../api/loginapi'
 import AuthenticationService from '../../js/AuthenticationService.js'
 import { createHashHistory } from 'history'
 import { useHistory } from "react-router-dom";
@@ -30,7 +30,7 @@ class CptApp extends Component {
              isuserJobSeeker:'false',
              loginstate:'',
          roleobj: {
-                role: 'jobseeker', 
+             role: 'almuni', 
                 name: '', 
                 tephoneNumber: '',
                 address: '',
@@ -46,9 +46,10 @@ class CptApp extends Component {
     onSubmit = (useremail, password) => {
 
         console.log(useremail)
-        login.getuserDetailpost(useremail, password)
-       {/*
-     } //     .then(
+        loginapi.getuserDetailpost(useremail, password)
+       
+     
+      //     .then(
         //         Response => {
         //             this.setState({
                         
@@ -75,8 +76,8 @@ class CptApp extends Component {
         //        this.props.history.push('/Login')
 
         //    )
-    */}
-        if (useremail === 'seeker' && password === 'dummy') {
+    
+        if (useremail === 'seeker@gmail.com' && password === 'dummy') {
             AuthenticationService.registerSuccessfulLogin(useremail, this.state.roleobj.role)
             if(AuthenticationService.isUserLoggedIn)
              {
@@ -90,7 +91,7 @@ class CptApp extends Component {
             this.setState({ userAlmuni: true, userJobSeeker: false })
             AuthenticationService.registerSuccessfulLogin(this.state.username, this.state.password, this.state.userJobSeeker)
 
-            //this.props.history.push('/welcome')
+            history.push('/welcome')
         }
         else {
 
@@ -101,7 +102,7 @@ class CptApp extends Component {
     }
     
     onsignup=(useremail,password,role)=>{
-        console.log(role)
+        console.log("signup component" +role)
          // signup.getuserDetailpost(useremail, password, role)
         //     .then(
         //         Response => {
@@ -113,7 +114,7 @@ class CptApp extends Component {
         //             })
 
         //             console.log(Response.data.id)
-        //             this.props.history.push({ pathname: '/welcome', state: { id: this.state.id } })
+        //           history.push('/welcome')
         //         }
         //     )
 
@@ -145,7 +146,7 @@ class CptApp extends Component {
                         </Route>
 
                         <Route path="/Signup" >
-                        <SignupComponent signupdetail={this.onsignup} />
+                            <SignupComponent signupdetail={this.onsignup}  />
                         </Route>
                         <AuthenticatedRoute path="/welcome">
                             <WelcomeComponent />

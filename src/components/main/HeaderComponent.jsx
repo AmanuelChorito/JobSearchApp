@@ -27,8 +27,8 @@ class HeaderComponent extends Component {
                        
                        
                         {isuserloggedin && <li ><Link className="nav-link" to="/welcome">Home </Link></li>}
-                        {isuserloggedin && (this.state.role==='jobseeker')&& <li ><Link className="nav-link" to="/Jobs"> Jobs</Link></li>}
-                        {isuserloggedin && (this.state.role === 'jobseeker')&& <li ><Link className="nav-link" to="/Almunipost"> Almuni Posts</Link></li>}
+                        {isuserloggedin && (this.state.role==='seeker') && <li ><Link className="nav-link" to="/Jobs"> Jobs</Link></li>}
+                        {isuserloggedin && (this.state.role === 'seeker')&& <li ><Link className="nav-link" to="/Almunipost"> Almuni Posts</Link></li>}
                         {isuserloggedin && (this.state.role === 'almuni')&& <li ><Link className="nav-link" to="/Postref"> Post Referral</Link></li>}
 
                         {isuserloggedin && (this.state.role === 'almuni') && <li ><Link className="nav-link" to="/Postjob"> Post Job</Link></li>}
