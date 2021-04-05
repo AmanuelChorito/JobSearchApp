@@ -10,7 +10,7 @@ class Almunipostjobapi {
 
     postjob(desc, url) {// get user and user role to show view accordingly
     const  data={description: desc, address:url}
-        return axios.post(`http://localhost:3000/postreferral`, { data })
+        return axios.post(`http://localhost:8080/postjob/referral`, { data })
     }
 
     getjobpost() {

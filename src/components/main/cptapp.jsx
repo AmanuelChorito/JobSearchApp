@@ -18,8 +18,9 @@ import AuthenticationService from '../../js/AuthenticationService.js'
 import { createHashHistory } from 'history'
 import { useHistory } from "react-router-dom";
 import history from '../../js/history';
-import interceptors from './interceptors.js'
+import sigup from '../../api/signup.js'
 import ReferralRequest from './AcceptReferralRequest'
+import signup from '../../api/signup.js'
 class CptApp extends Component {
     constructor(props){
         super(props)
@@ -31,8 +32,9 @@ class CptApp extends Component {
             isuserAlmuni:'false',
              isuserJobSeeker:'false',
              loginstate:'',
+           localStorage:'',
          roleobj: {
-             role: 'seeker', 
+             role: 'almuni', 
                 name: '', 
                 tephoneNumber: '',
                 address: '',
@@ -49,36 +51,35 @@ class CptApp extends Component {
 
         console.log(useremail)
         loginapi.getuserDetailpost(useremail, password)
-       
-     
-      //     .then(
-        //         Response => {
-        //             this.setState({
+         
+          .then(
+                Response => {
+                    this.setState({
                         
-        //                     // useremail:Response.data.useremail,
-        //                     //  roleobj: {
-        //                     //     role: Response.data.role,
-        //                     //         name: Response.data.name
-        //                     //             tephoneNumber: Response.data.telephoneNumber
-        //                     //                 address: Response.data.address,
-        //                     //                     roleName: Response.data.roleName,
-        //                     //                         preferredJob: Response.data.preferredJob,
-        //                     //                             preferredCompany: Response.data.preferredCompany
-                                                    //localStorage.setItem("authorization", Response.data.token);
+                            // useremail:Response.data.useremail,
+                            //  roleobj: {
+                            //     role: Response.data.role,
+                            //         name: Response.data.name
+                            //             tephoneNumber: Response.data.telephoneNumber
+                            //                 address: Response.data.address,
+                            //                     roleName: Response.data.roleName,
+                            //                         preferredJob: Response.data.preferredJob,
+                            //                             preferredCompany: Response.data.preferredCompany
+                                               //   localstorage : sessionStorage.setItem("authorization", Response.data.token)
                                                   
-        //             })
+                    })
 
-        //             console.log(Response.data.id)
-        //             this.props.history.push({ pathname: '/welcome',}) 
-        //         }
-        //     )
+                    console.log(Response.data.id)
+                    this.props.history.push({ pathname: '/welcome',}) 
+                }
+            )
 
-        //    .catch(
+           .catch(
 
-        //        this.setState({ loginstate: false}),
-        //        this.props.history.push('/Login')
+               this.setState({ loginstate: false}),
+               this.props.history.push('/Login')
 
-        //    )
+           )
     
         if (useremail === 'seeker@gmail.com' && password === 'dummy') {
             AuthenticationService.registerSuccessfulLogin(useremail, this.state.roleobj.role)
@@ -104,29 +105,30 @@ class CptApp extends Component {
 
     }
     
-    onsignup=(useremail,password,role)=>{
-        console.log("signup component" +role)
-         // signup.getuserDetailpost(useremail, password, role)
-        //     .then(
-        //         Response => {
-        //             this.setState({
-        //                // useremail:Response.data.useremail,
-                            //role: Response.data.role,
+    onsignup=(data)=>{
+        console.log("signup component" +data)
+       
+         signup.getuserDetailpost(data)
+            .then(
+                Response => {
+                    this.setState({
+                       // useremail:Response.data.useremail,
+                            role: Response.data.role,
 
 
-        //             })
+                    })
 
-        //             console.log(Response.data.id)
-        //           history.push('/welcome')
-        //         }
-        //     )
+                 //   console.log(Response.data.id)
+                  history.push('/welcome')
+                }
+            )
 
-        //    .catch(
+           .catch(
 
-        //        this.setState({ loginstate: false}),
-        //        this.props.history.push('/Login')
+               this.setState({ loginstate: false}),
+               this.props.history.push('/Login')
 
-        //    )
+           )
 
     }
 

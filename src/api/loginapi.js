@@ -10,7 +10,8 @@ class loginapi   {
     
      getuserDetailpost(emailaddress, password) {// get user and user role to show view accordingly
         const logindetail={email: emailaddress, pas: password}
-         //return axios.post(`http://localhost:3000/login`, logindetail)
+       // let basicAuthHeader=' Bearer'+ window.btoa(emailaddress+":"+password)
+         return axios.post(`http://localhost:3000/api/login`,logindetail)
         }
 }
 export default new loginapi()

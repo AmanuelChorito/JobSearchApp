@@ -1,22 +1,34 @@
 import React, { Component } from 'react'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
+import { getRoles } from '@testing-library/dom'
 class SignupComponent extends Component {
 
     constructor(props) {
         super(props)
         this.state = {
-            useremail: '',
+            email: '',
             password:'',
-            picked:''
-    }
+            picked:'',
+            role:{
+            name:'',
+            telephoneNumber:'',
+            address:'',
+            currentJob:' ',
+            currentCompany:'',
+            preferredJob:'',
+            preferredCompany:'' }
+
+
+
+            }
 
      
 
     }
     validate = (values) => {
         let errors = {};
-        if (!values.useremail) {
-            errors.useremail = ' to signup User Email required'
+        if (!values.email) {
+            errors.email = ' to signup User Email required'
         } else if (!values.password) {
             errors.password = ' Password Required'
         }
@@ -30,28 +42,36 @@ class SignupComponent extends Component {
     signuphanlde = (values) => {
         {
             
-            console.log("signup component"+this.state.useremail)
-            this.props.signupdetail(this.state.useremail, this.state.password, this.state.picked)
+            console.log("signup component"+this.state.email)
+            this.props.signupdetail({...this.state})
             
         }
     }
     render() {
-        const { useremail, password, picked } = this.state
+        const { email, password, picked } = this.state
         return (
             <div>
                 <h1>Signup Form</h1>
                 <div className="container">
-                    <Formik initialValues={{useremail:'', password:'', picked:''}}  onSubmit={this.signuphanlde} validate={this.validation} enableReinitialize={true}>
+                    <Formik initialValues={{email:'', password:'', picked:''}}  onSubmit={this.signuphanlde} validate={this.validation} enableReinitialize={true}>
                         {
                             (props) => (
                                 <Form >
                                 
-                                    <ErrorMessage name="useremail" component="div" className="alert alert-warning"></ErrorMessage>
+                                    <ErrorMessage name="email" component="div" className="alert alert-warning"></ErrorMessage>
                                     <ErrorMessage name="password" component="div" className="alert alert-warning"></ErrorMessage>
                                     <ErrorMessage name="picked" component="div" className="alert alert-warning"></ErrorMessage>
+
                                     <fieldset className="form-group">
-                                        <label>User name: </label>
-                                        <Field className="form-control" value={this.state.useremail}type="email" name="useremail" onChange={this.handleChange} required></Field>
+
+                                        <label>First Last Name: </label>
+                                        <Field className="form-control" value={this.state.name} type="text" name="name" onChange={this.handleChange} required></Field>
+                                    </fieldset>
+
+                                    <fieldset className="form-group">
+                                       
+                                    <label>Email: </label>
+                                        <Field className="form-control" value={this.state.email}type="email" name="email" onChange={this.handleChange} required></Field>
                                     </fieldset>
 
                                     <fieldset className="form-group">
@@ -59,6 +79,42 @@ class SignupComponent extends Component {
                                         <Field className="form-control" value= {this.state.password} type="password" name="password" onChange={this.handleChange} required></Field>
                                     </fieldset>
                                     <fieldset className="form-group">
+                                        <label>telephoneNumber:     </label>
+                                        <Field className="form-control" value={this.state.telephoneNumber} type="phone" name="telephoneNumber" onChange={this.handleChange} required></Field>
+                                    </fieldset>
+                                    <fieldset> <label>Status:     </label>
+                                        <select
+                                            name="picked"
+                                            value={this.state.picked}
+                                            onChange={this.handleChange}
+                                                                                      
+                                        >
+                                            <option value="STUDENT" label="STUDENT" />
+                                            <option value="ALMUNI" label="ALMUNI" />
+                                        </select>
+                                    
+                                    </fieldset>
+                                    
+                                    
+                                    <fieldset className="form-group">
+                                        {this.state.picked === 'ALMUNI' &&  <label>currentJob:     </label>}
+                                        {this.state.picked === 'ALMUNI' &&   <Field className="form-control" value={this.state.currentJob} type="phone" name="currentjob" onChange={this.handleChange} required></Field>}
+                                    </fieldset>
+                                    <fieldset className="form-group">
+                                        {this.state.picked === 'ALMUNI' &&   <label>currentCompany:     </label>}
+                                        {this.state.picked === 'ALMUNI' &&  <Field className="form-control" value={this.state.currentCompany} type="phone" name="cuurentcompany" onChange={this.handleChange} required></Field>}
+                                    </fieldset>
+
+                                    <fieldset className="form-group">
+                                        {this.state.picked === 'STUDENT' && <label>preferredJob:     </label>}
+                                        {this.state.picked === 'STUDENT' && <Field className="form-control" value={this.state.preferredJob} type="phone" name="currentjob" onChange={this.handleChange} required></Field>}
+                                    </fieldset>
+                                    <fieldset className="form-group">
+                                        {this.state.picked === 'STUDENT' && <label>preferredCompany:     </label>}
+                                        {this.state.picked === 'STUDENT' && <Field className="form-control" value={this.state.preferredCompany} type="phone" name="cuurentcompany" onChange={this.handleChange} required></Field>}
+                                    </fieldset>
+
+                                   {/*} <fieldset className="form-group">
                                         <label>
                                             <Field type="radio" name="picked" value="JobSeeker" onChange={this.handleChange} checked={this.state.picked ==='JobSeeker'}  />Job Seeker
                                      </label>
@@ -67,7 +123,7 @@ class SignupComponent extends Component {
                                         <label>
                                             <Field type="radio" name="picked" value="Almuni" onChange={this.handleChange} checked={this.state.picked === 'Almuni'}/> MIU Almuni
                                      </label>
-                                    </fieldset>
+                            </fieldset>*/}
                                     
                                     <fieldset className="form-group">
                                         <button className="btn btn-success btn-lg " type="submit">Signup</button>
